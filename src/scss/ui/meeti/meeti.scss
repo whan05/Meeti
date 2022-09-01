@@ -1,0 +1,19 @@
+@use 'base/mixins' as m;
+
+
+.main {
+
+    &__heading {
+        @include m.heading;
+    }
+
+    &__grid {
+        margin-top: 5rem;
+        
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+         }
+    }
+}

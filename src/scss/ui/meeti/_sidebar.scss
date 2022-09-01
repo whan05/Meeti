@@ -1,0 +1,33 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.sidebar {
+    text-align: center;
+    
+    &__mapa {
+        width: 100%;
+    }
+
+    &__contenido {
+        padding: 5rem;
+        background-color: v.$secundario;
+
+    }
+    &__heading {
+        color: v.$blanco;
+    }
+
+    &__fecha,
+    &__hora,
+    &__ubicacion {
+        color: v.$blanco;
+    }
+
+    &__fecha,
+    &__hora {
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+    }
+}
